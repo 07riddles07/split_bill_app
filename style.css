@@ -1,0 +1,79 @@
+body {
+    background-image: url("https://images.pexels.com/photos/4551414/pexels-photo-4551414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #525252;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin: 23px 45px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 500px;
+    height: 680px;
+    background-color: rgba(128, 126, 129, 0.8);
+    border-radius: 30px;
+    color: white;
+}
+
+h1 {
+    align-self: center;
+    padding-top: 15px;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+    padding: 5px;
+}
+
+#addTip {
+    background-color: #8ddaba;
+    padding: 5px;
+}
+
+#calculate {
+    background-color: #d69dc9;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#addTip,
+#calculate {
+    border: none;
+    border-radius: 7px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+#tip {
+    font-family: 'Lato', sans-serif;
+    display: none;
+}
+
+.totalAmountToPay {
+    display: flex;
+    justify-content: space-around;
+}
+
+#billSplit, 
+#totalTip,
+#totalAmount {
+    background-color: rgb(89, 197, 152, 0.8);
+    padding: 15px;
+    border-radius: 7px;
+    border: 1px solid rgb(43, 119, 87);
+}
