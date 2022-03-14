@@ -1,6 +1,9 @@
 const calculateButton = document.querySelector("#calculate");
 calculateButton.addEventListener("click", calculateAmount);
 
+const tipButton = document.querySelector("#addTip");
+tipButton.addEventListener("click", showTip);
+
 function calculateAmount(e) {
   e.preventDefault(); /* Не перезагружать страницу автоматически при делении amountPerPerson*/
   const bill = document.querySelector("#bill").value;
@@ -30,4 +33,9 @@ function calculateAmount(e) {
   document.querySelector("#dividedBill").textContent = amountPerPerson;
   document.querySelector("#dividedTip").textContent = tipPerPerson;
   document.querySelector("#billAndTip").textContent = totalSum;
+}
+
+function showTip(e) {
+    e.preventDefault();
+    tip.style.display = 'block';
 }
