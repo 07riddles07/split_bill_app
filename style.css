@@ -78,3 +78,27 @@ input {
     border-radius: 7px;
     border: 1px solid rgb(43, 119, 87);
 }
+
+@media all and (max-width: 800px) {
+    .container {
+        margin: 23px 45px;
+        width: 500px;
+        height: 680px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .container {
+        margin: 0px 0px 20px -2px;
+        max-width: 310px;
+        height: 600px;
+    }
+
+    #billSplit, 
+#totalTip,
+#totalAmount {
+    margin: 5px;
+    padding: 5px; 
+    font-size: 15px;
+}
+}
